@@ -1,0 +1,21 @@
+python src/train.py \
+	--domain_name walker\
+	--task_name walk\
+	--critic_para 1\
+	--action_repeat 4\
+	--batch_size 64\
+	--double_aug True\
+	--algorithm spda \
+	--encoder_para 0.02\
+	--common_encoder True\
+	--only_encoder True\
+	--if_obscat True\
+	--add_clip True\
+	--clip_step 500000\
+	--encoder_clip 0.2\
+	--aug_method random_overlay\
+	--eval_freq 5000\
+	--eval_episodes 5\
+	--seed 1\
+	--de_num 0\
+	--log_dir logs
